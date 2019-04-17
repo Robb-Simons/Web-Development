@@ -1,0 +1,21 @@
+body{
+	background-color: #222222;
+}
+
+.container1{
+	background-color: #222222;
+}
+
+.col-lg{
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+}
+
+#centermepls{
+	text-align: center;
+}
+
+.steamicon{
+	url(lib\icomoon\Papirus-Team-Papirus-Apps-Steam.ico);
+}

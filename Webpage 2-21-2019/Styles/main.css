@@ -1,0 +1,177 @@
+body {
+	background-color: #222;
+	font-family: 'Play', sans-serif;
+}
+/* Nav bar code*/
+header {
+	background-color: #924FBF;
+	font-family: 'Play', sans-serif;
+}
+
+header::after {
+	content:'';
+	display:table;
+	clear: both;
+}
+
+.navbarcont {
+	width: 75%;
+	margin: 3px;
+}
+
+header nav img {
+	float: left;
+	width: 150px;
+	padding: 3px 0;
+	margin-left: 8px
+}
+
+header ul {
+	float: right;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav li {
+	display: inline-block;
+	margin-right: 30px;
+	padding-top:18px;
+	position: relative;
+}
+
+header nav a {
+	color:#444;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header nav a:hover {
+	color:#08927E;
+}
+
+header nav a::before {
+	content:'';
+	display:block;
+	height: 5px;
+	width: 100%;
+	background-color:#444;
+	
+	position:absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 200ms;
+}
+
+header nav a:hover::before{
+	width:100%
+}
+/* Jumbotron code lul nvm i used bs4 UwU*/
+
+.jumbotron{
+	background-image:url("../Images/Jumbo_img003..jpg");
+}
+
+.display-4{
+	color:#1FA69B;
+}
+
+.lead{
+	color:#23E4DB;
+}
+
+
+/*Homepage code*/
+
+.column{
+	float: left;
+	width: 45%;
+	border: thick solid;
+	border-color: black;
+	background-color: azure;
+	padding: 10px 10px 10px 10px;
+	margin-left: 40px;
+	font-family: 'Play', sans-serif;
+}
+
+.columnmiddle{
+	float:left;
+	width: 2%;
+	padding: 8px;
+	margin: 5px
+	
+}
+
+.hprow:after{
+	content:"";
+	display:table;
+	clear: both;
+}
+
+section div h1{
+	text-align: center
+}
+/*-----------------------------footer------------------------------*/
+
+footer nav img {
+	float: left;
+	width: 150px;
+	padding: 3px 0;
+	margin-left: 8px
+}
+
+footer ul {
+	float: right;
+}
+
+footer nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer nav li {
+	display: inline-block;
+	margin-right: 30px;
+	padding-top:18px;
+	position: relative;
+}
+
+footer nav a {
+	color:#643380;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer nav a:hover {
+	color:#08927E;
+}
+
+footer nav a::before {
+	content:'';
+	display:block;
+	height: 5px;
+	width: 100%;
+	background-color:#444;
+	
+	position:absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 200ms;
+}
+
+footer nav a:hover::before{
+	width:100%
+}
+
+#specialli{
+	float: left;
+}
+/*-------------------------Gallery CSS----------------------------*/
+
+.gallerytext{
+	color: #619E95;
+}
