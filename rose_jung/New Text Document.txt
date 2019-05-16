@@ -1,0 +1,80 @@
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
+const gestureZone = document.getElementById('gestureZone');
+
+gestureZone.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+gestureZone.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false); 
+
+function handleGesture() {
+    if (touchendX <= touchstartX) {
+        console.log('Swiped left');
+    }
+    
+    if (touchendX >= touchstartX) {
+        console.log('Swiped right');
+    }
+    
+    if (touchendY <= touchstartY) {
+        console.log('Swiped up');
+    }
+    
+    if (touchendY >= touchstartY) {
+        console.log('Swiped down');
+    }
+    
+    if (touchendY === touchstartY) {
+        console.log('Tap');
+    }
+}
+
+
+
+
+
+
+
+
+/*************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+
+
+document.createEvent("TouchEvent");
+
+  // Here we're ensured touch capabilities
+  var scroll = document.getElementById('myid');
+  var start = null;
+  var clickIfEnd = true;
+  scroll.addEventListener('touchstart', function (e) {
+    start = e.touches[0].pageX;
+    clickIfEnd = true;
+    e.preventDefault();
+  }, false);
+  scroll.addEventListener('touchmove', function (e) {
+    this.scrollLeft = start - e.touches[0].pageX;
+    clickIfEnd = false;
+    e.preventDefault();
+  }, false);
+  scroll.addEventListener('touchend', function (e) {
+    if (clickIfEnd) {
+      if (e) {
+        clickIfEnd = e.target;
+        // Add a delay before treating this as a click, in case it was accidental
+        setTimeout(arguments.callee, 100);
+      } else {
+        // clickIfEnd is the element that was clicked!
+      }
+    }
+  }, false); 

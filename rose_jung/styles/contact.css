@@ -1,0 +1,38 @@
+body{
+     background-image: url("../images/back.png");
+     background-color: #fff;
+     margin:0;
+}
+#contact{
+     text-align:center;
+}
+h1{
+     text-align:center;
+     margin-top:5vh;
+     color:#fff;
+     font-size:3em;
+}
+h2{
+     color:#ffffff;
+}
+form{
+     font-size:1.3em;
+     color:#ffffff;
+     background-color: rgba(0,0,0,0.1);
+}
+p{
+     text-align:center;
+     color:#fff;
+}
+#submit{
+     width:14vw;
+     height:7vh;
+     font-size:1.5em;
+}
+@media only screen and (max-device-width: 769px){
+     #submit{
+         width:25vw;
+         height:8vh;
+         font-size:1em;  
+     }         
+}

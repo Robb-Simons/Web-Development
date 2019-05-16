@@ -1,0 +1,20 @@
+footer{
+     text-align:center;
+     background-color: rgba(0,234,78,0.7);
+     color: #ffffff;
+     margin:0;
+     clear:both;
+     min-width:100vw;
+     min-height:15vh;
+}
+footer h3{
+     text-shadow: 0.1em 0.1em rgba(63,107,169, 0.7);
+     opacity: 0.9;
+     font-size:4em;
+     margin:0;
+}
+#depict{
+     text-align:center;
+     font-size:2em;
+     margin:0;
+}

@@ -1,0 +1,154 @@
+body{    
+     margin:0;
+     padding:0;
+     background-image: url("../images/back.png");
+     overflow: scroll;
+}
+#pic2d {
+     width: 33%;
+     height: auto;
+     font-family: arial,black;
+     margin-left:1%;
+}
+#content {
+     width: 30%;
+     background-color:rgba(0,0,0,0.3);
+     color: #ffffff;
+     text-shadow: 0.1em 0.1em rgba(63,107,169, 0.7);
+     font-family: arial,black;
+}
+.rosepic{
+     width:100%;
+}
+.bio{
+     text-align:left;
+     font-size: 1.5em;
+     margin: 0.45em;
+}
+#pic3d {
+     width: 33%;
+     height: auto;
+     font-family: arial,black;
+     margin-right:1%;
+}
+#top_items {
+     display: flex;
+     margin-left:0;
+     padding-left:0;
+     margin-right:0;
+     padding-right:0;
+     margin:0;
+     padding:0;
+     justify-content:space-between;
+}
+/***fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff****************slideshow *********************************************************************/
+.picta{
+     width:100%;
+}
+/* Slideshow container */
+.slideshow-container {
+     position: relative; 
+     display:inline-block;
+}
+/* Next & previous buttons */
+.prev, .next {
+     transition: 0.4s ease;
+     border-radius: 0 0 0 0;
+     background-color: rgba(0,0,0,0.5);
+     color: #ffffff;
+     text-shadow: 0.07em 0.08em rgba(63,107,169, 0.5);
+     opacity: 0.85;
+     cursor:grab;
+     margin:0;
+     font-size: 4em;
+     padding:0;
+     padding-left: 1.5vw;
+     padding-right: 1.5vw;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.7);
+}
+/* Caption text */
+.text {
+     color: #f2f2f2;
+     font-size: 2em;
+     padding: 0;
+     margin-top: 1.3vh;
+     width: 100%;
+     text-align: center;
+     text-shadow: 0.1em 0.1em rgba(63,107,169, 0.7);
+     opacity: 0.9;
+}
+/* The dots/bullets/indicators */
+.dot {
+     display: none;
+}
+/* Fading animation */
+.fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+}
+@keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+}
+/**********************slideshow end*********************************************/
+h2{
+     color: #ffffff;
+     text-shadow: 0.1em 0.1em rgba(63,107,169, 0.7);
+     font-size:3em;
+     margin:0;
+}
+#bout{
+     font-size:2em;
+     text-align:center;
+}
+.dee{
+     font-size:2em;
+     font-weight:bold;
+     padding-left: 2vw;
+     padding-right: 2vw;
+     background-color: rgba(0,0,0,0.04);
+     color: #ffffff;
+     text-shadow: 0.07em 0.08em rgba(63,107,169, 0.5);
+     cursor:grab;
+}
+.doot{
+     display:flex;
+     justify-content:space-between;
+}
+.text{
+     margin-bottom:3vh;
+}
+@media only screen and (max-device-width: 769px){
+     #top_items{
+         flex-direction:column;
+     }
+     #content{
+         order:-1;
+         width:100vw;
+     }
+     #pic2d{
+         width:100vw;
+         margin-top:1vh;
+     }
+     #pic3d{
+         width:100vw;
+     }
+     .picta{
+         width:100vw;{
+     }
+}
+@media only screen and (max-width: 426px){
+     .prev, .next {
+     padding-left: 7vw;
+     padding-right: 7vw;
+     }
+}

@@ -1,0 +1,133 @@
+header{
+     height:15vh:
+}
+.toplinks { 
+     text-decoration:none;
+     color: #ffffff;
+     text-shadow: 0.1em 0.1em rgba(63,107,169, 0.7);
+     opacity: 0.9;
+     background-color: rgba(0,0,0,0.04);
+     padding:4%;
+     font-family: arial,black;
+}
+#hidesmall, header{
+     position:sticky;
+     top:0;
+     display:flex;
+     justify-content:space-between;
+     background-color:rgba(0,0,0,0);
+     z-index:2;
+     width:100vw;
+     padding:0;
+     margin:0;
+     clear:both;
+     min-height:12vh;
+}
+.opague{
+     background-color:rgba(0,0,0,0.65);
+}
+#title {
+     font-family: arial,black;
+     text-align:center;
+     width: 30%;
+     padding-top:0.1em;
+     margin-top:0.1em;
+     font-size: 3em;
+}
+#title a{
+     text-decoration:none;
+     color:#ffffff;
+}
+h4 {
+     width:16%;
+     text-align:center;
+     font-size: 2em;
+     padding-top:0.3em;
+     margin-top:0.3em;
+}
+#hidebig{
+     display:none;
+}
+@media only screen and (max-device-width: 769px) {
+     header{
+         height:20vh;
+     }
+     #hidesmall{
+         display:none;
+     }
+     #hidebig{
+         display:flex;
+         position:sticky;
+         width:100vw;
+         height:20vh;
+     }
+     #hidebig h1{
+         width:60%;
+         font-size:2em;
+         color: #ffffff;
+         text-shadow: 0.06em 0.05em rgba(63,107,169, 0.7);
+         opacity: 0.9;
+         margin:auto;
+         padding:0;
+     }
+     .link{
+         font-family: calibri;
+         background-color:rgba(255,255,255,0.01);
+         margin:auto;
+         height:100%;
+         outline:none;
+         border:0;
+     }
+     .link img{
+         height:60%;
+     }
+     .link a{
+         text-decoration:none;
+         color:#ffffff;
+     }
+     .link a:hover, .dropdown:hover{
+         background-color:rgba(255,255,255,0.9);
+         color:#000000;
+         text-shadow: 0em 0em 0.1em #ffffff;
+         border:0.001em solid #ffffff;
+     }
+     .link:focus{
+         background-color:rgba(0,0,0,0.7);
+         outline:none;
+     }
+     
+     .dropdown {
+         position: relative;
+         display: inline-block;
+     }
+     .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color:rgba(255,255,255);
+         z-index: 1;  
+         width:200%;
+     }
+     .dropdown-content a {
+         color: black;
+         text-decoration: none;
+         display: block;
+         border: 0.05em solid black;
+         text-align:center;
+         background-color: #fff;
+         opacity:0.8;
+         font-size:1.2em;
+         height:7vh;
+     }
+     .dropdown-content a:hover {
+         background-color: #000;
+         color:#fff;
+     }
+     .dropdown:hover .dropdown-content{
+         display: block;
+     }
+} 
+@media only screen and (max-device-width: 426px) {
+     .dropdown-content {
+         width:250%;
+     }
+}
